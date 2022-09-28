@@ -1,3 +1,5 @@
+/* Styles for TABS */
+
 html {
   margin: 0;
   padding: 0;
@@ -51,4 +53,9 @@ button[aria-selected="true"] {
 
 button:hover {
   background-color: #c7c7c6;
+}
+
+/* Styles for Overview TAB */
+.img-thumbnail {
+  height: 35px !important;
 }

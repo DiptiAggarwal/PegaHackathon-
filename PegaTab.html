@@ -3,50 +3,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="PegaTab.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
     <title>Pega DX Project</title>
+
   </head>
   <body>
-    <!-- <button class="tablink" onclick="openPage('Overview', this, 'red')" id="Overview">Overview</button>
-    <button class="tablink" onclick="openPage('Network', this, 'green')" id="Overview">Network</button>
-    <button class="tablink" onclick="openPage('Scripting', this, 'blue')" id="Overview">Scripting</button>
-    <button class="tablink" onclick="openPage('Console', this, 'orange')" id="Overview">Console</button>
-    <button class="tablink" onclick="openPage('Refernces', this, 'blue')" id="Overview">Refernces</button>
-    <button class="tablink" onclick="openPage('Insight', this, 'orange')" id="Overview">Insight</button>
-
-    <div id="Overview" class="tabcontent">
-      <h3>Overview</h3>
-      <p>Home is where the heart is..</p>
-    </div>
-
-    <div id="Network" class="tabcontent">
-      <h3>Network</h3>
-      <p>Some news this fine day!</p>
-    </div>
-
-    <div id="Scripting" class="tabcontent">
-      <h3>Scripting</h3>
-      <p>Get in touch, or swing by for a cup of coffee.</p>
-    </div>
-
-    <div id="Console" class="tabcontent">
-      <h3>Console</h3>
-      <p>Get in touch, or swing by for a cup of coffee.</p>
-    </div>
-
-    <div id="Refernces" class="tabcontent">
-      <h3>Refernces</h3>
-      <p>Who we are and what we do.</p>
-    </div>
-
-    <div id="Insight" class="tabcontent">
-      <h3>Insight</h3>
-      <p>Who we are and what we do.</p>
-    </div> -->
-
     <div class="wrapper">
       <div class="tabs">
         <div role="tablist" aria-label="Main Tabs">
-          <button role="tab" aria-selected="true" id="Overview">
+          <button role="tab" aria-selected="tdue" id="Overview">
             Overview
           </button>
           <button role="tab" aria-selected="false" id="Network">Network</button>
@@ -62,29 +28,68 @@
           </button>
         </div>
         <div role="tabpanel" aria-labelledby="Overview">
-          <div>
-            <div>
-              <p>Application is built on</p>
-              <p>value</p>
-            </div>
-            <div>
-              <p>Platform version</p>
-              <p>value</p>
-            </div>
-            <div>
-              <p>Build version</p>
-              <p>value</p>
-            </div>
-            <div>
-              <p>Framework Version</p>
-              <p>value</p>
-            </div>
-            <div>
-              <p>Service URL</p>
-              <p>value</p>
-            </div>
-            
-
+          <div class="table-responsive">
+            <table class="table table-bordered table-dark">
+              <tbody>
+                <tr>
+                  <th>Pega Platform Version</th>
+                  <td>
+                    <img
+                      src="./assets/icons/pega-icon.png"
+                      alt="Pega Logo"
+                      class="img-thumbnail"
+                    />
+                  </td>
+                  <td>WIP</td>
+                  <td>For all - source?</td>
+                </tr>
+                <tr>
+                  <th>Pega Platform URL</th>
+                  <td>some icon</td>
+                  <td>WIP</td>
+                  <td>For all - can be fetched from main.js?</td>
+                </tr>
+                <tr>
+                  <th>Constellation Service URL</th>
+                  <td>some icon</td>
+                  <td>WIP</td>
+                  <td>should only be visible for c11n applications , source?</td>
+                </tr>
+                <tr>
+                  <th>Application built</th>
+                  <td>
+                    <img
+                      src="./assets/icons/angular-icon.png"
+                      alt="Angular Logo"
+                      class="img-thumbnail"
+                    />
+                  </td>
+                  <td>WIP</td>
+                  <td>
+                    React SP / Angular SP / React SDK / Angular SDK / Web
+                    component / Cosmos React - source?
+                  </td>
+                </tr>
+                <tr>
+                  <th>Build Version</th>
+                  <td>
+                    <img
+                      src="./assets/icons/angular-icon.png"
+                      alt="Angular Logo"
+                      class="img-thumbnail"
+                    />
+                  </td>
+                  <td>TBD</td>
+                  <td>Based on application base - can be fetched from main.js</td>
+                </tr>
+                <tr>
+                  <th>Angular Version</th>
+                  <td>some icon</td>
+                  <td>TBD</td>
+                  <td>Applicable for angular / react SP and SDK - can be fetched from root component</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         <div role="tabpanel" aria-labelledby="Network" hidden>

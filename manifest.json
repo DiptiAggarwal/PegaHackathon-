@@ -4,13 +4,20 @@
   "description": "This Pega DX Project is to understand on how to create DevTool Tabs",
   "version": "1.0",
   "devtools_page": "devtools.html",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
   "icons": {
-    "16": "icon.png",
-    "48": "icon.png",
-    "128": "icon.png"
+    "16": "./assets/icons/pega-dx.png",
+    "48": "./assets/icons/pega-dx.png",
+    "128": "./assets/icons/pega-dx.png"
   },
   "action": {
-    "default_icon": "icon.png",
+    "default_icon": "./assets/icons/pega-dx.png",
     "default_title": "Pega DX Project",
     "default_popup": "popup.html"
   }
