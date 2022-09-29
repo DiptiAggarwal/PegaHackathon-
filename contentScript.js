@@ -2,6 +2,7 @@ console.log("Hola!");
 let buildVersion = "";
 
 // 2 - for angular SP
+// TODO - fetch it directly from console
 const allElements = document.getElementsByTagName("*");
 const elementArr = [...allElements];
 const filtered = elementArr.filter((e) => e.hasAttribute("ng-version"));
