@@ -1,21 +1,23 @@
 console.log("Hola!");
+let buildVersion = "";
 
-// 1 - get angular version specific
-const appRootElement = document.getElementsByTagName("app-root")[0];
-const angularVersion = appRootElement.getAttribute("ng-version");
-console.log(angularVersion);
-
-// 2- angular version generic
+// 2 - for angular SP
 const allElements = document.getElementsByTagName("*");
 const elementArr = [...allElements];
 const filtered = elementArr.filter((e) => e.hasAttribute("ng-version"));
-const angularVersion2 = filtered[0].getAttribute("ng-version");
-console.log(angularVersion2);
+const angularVersion =
+  filtered.length > 0 ? filtered[0].getAttribute("ng-version") : "Not Found";
+console.log(angularVersion);
+buildVersion = angularVersion;
+
+chrome.storage.local.set({
+  buildVersion,
+});
 
 // get main.js file
 function getMainFile() {
   //  TODO - this URL needs to be updated
-  fetch("http://localhost:4200/main.js")
+  fetch("https://10.225.94.122:8443/prweb")
     .then((response) => response.text())
     .then((data) => console.log(data));
 }

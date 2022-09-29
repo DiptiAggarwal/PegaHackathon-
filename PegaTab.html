@@ -5,26 +5,64 @@
     <link rel="stylesheet" href="PegaTab.css" />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
-    <title>Pega DX Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
 
+    <title>Pega DX Project</title>
   </head>
   <body>
     <div class="wrapper">
       <div class="tabs">
         <div role="tablist" aria-label="Main Tabs">
-          <button role="tab" aria-selected="tdue" id="Overview">
-            Overview
+          <button
+            role="tab"
+            class="tab-header"
+            aria-selected="true"
+            id="Overview"
+          >
+            <i class="bi bi-info-square"></i>  Overview
           </button>
-          <button role="tab" aria-selected="false" id="Network">Network</button>
-          <button role="tab" aria-selected="false" id="Scripting">
-            Scripting
+          <button
+            role="tab"
+            class="tab-header"
+            aria-selected="false"
+            id="Network"
+          >
+            <i class="bi bi-reception-4"></i>  Network
           </button>
-          <button role="tab" aria-selected="false" id="Console">Console</button>
-          <button role="tab" aria-selected="false" id="References">
-            References
+          <button
+            role="tab"
+            class="tab-header"
+            aria-selected="false"
+            id="Scripting"
+          >
+            <i class="bi bi-braces"></i> Scripting
           </button>
-          <button role="tab" aria-selected="false" id="Insights">
-            Insights
+          <button
+            role="tab"
+            class="tab-header"
+            aria-selected="false"
+            id="Console"
+          >
+            <i class="bi bi-binoculars"></i> Console
+          </button>
+          <button
+            role="tab"
+            class="tab-header"
+            aria-selected="false"
+            id="References"
+          >
+            <i class="bi bi-book"></i> References
+          </button>
+          <button
+            role="tab"
+            class="tab-header"
+            aria-selected="false"
+            id="Insights"
+          >
+            <i class="bi bi-bookmark"></i> Insights
           </button>
         </div>
         <div role="tabpanel" aria-labelledby="Overview">
@@ -53,7 +91,9 @@
                   <th>Constellation Service URL</th>
                   <td>some icon</td>
                   <td>WIP</td>
-                  <td>should only be visible for c11n applications , source?</td>
+                  <td>
+                    should only be visible for c11n applications , source?
+                  </td>
                 </tr>
                 <tr>
                   <th>Application built</th>
@@ -80,13 +120,18 @@
                     />
                   </td>
                   <td>TBD</td>
-                  <td>Based on application base - can be fetched from main.js</td>
+                  <td>
+                    Based on application base - can be fetched from main.js
+                  </td>
                 </tr>
                 <tr>
                   <th>Angular Version</th>
                   <td>some icon</td>
                   <td>TBD</td>
-                  <td>Applicable for angular / react SP and SDK - can be fetched from root component</td>
+                  <td>
+                    Applicable for angular / react SP and SDK - can be fetched
+                    from root component
+                  </td>
                 </tr>
               </tbody>
             </table>

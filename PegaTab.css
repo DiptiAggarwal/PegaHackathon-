@@ -6,12 +6,7 @@ html {
   font-family: Arial;
 }
 
-body {
-  background-color: hsl(100%, 50%, 50%);
-}
-
 .wrapper {
-  padding: 2px;
   background: white;
   height: 100%;
 }
@@ -23,36 +18,49 @@ body {
 [role="tablist"] {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 5px;
 }
 
 [role="tabpanel"] {
-  background: #dadadaa8;
+  background: transparent;
   padding: 20px;
   min-height: 100%;
+  border-top: #6e6c6c 0.5px solid;
 }
 
-button {
-  background: #f9f9f9;
+button.tab-header {
+  background: white;
   border: 0;
   color: black;
-
   --bs-color: rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 -2px 5px var(--bs-color);
   cursor: pointer;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: 500;
   padding: 5px;
+  border-right: #a9a3a3 0.5px solid;
 }
+
+/* div[role="tablist"] > button.tab-header + button.tab-header::after {
+  content: "";
+  background: rgb(171, 26, 26);
+  position: absolute;
+  bottom: 93%;
+  left: 16.5%;
+  height: 5%;
+  width: 2px;
+} */
 
 button[aria-selected="true"] {
-  background: #dadadaa8;
-  box-shadow: none;
   color: rgba(0, 0, 0, 0.7);
-  border-bottom: black 3px solid;
+  border-bottom: #1f2555 3px solid;
 }
 
-button:hover {
-  background-color: #c7c7c6;
+button.tab-header:focus {
+  outline: none !important;
+}
+
+button.tab-header:hover,
+button.tab-header:focus-within {
+  background-color: #cccfef;
 }
 
 /* Styles for Overview TAB */
